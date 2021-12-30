@@ -23,7 +23,7 @@ body {
 .lamp {
   height: 400px;
   width: 400px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: relative;
 }
 
@@ -263,4 +263,38 @@ body {
   border-radius: 20px 20px 0 0;
   background-color: var(--bg-gray);
   right: 10px;
+}
+
+.controls {
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+  overflow: hidden;
+}
+
+.containerButtons {
+  background-color: var(--bg-gray-dark);
+  width: 20px;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+button {
+  width: 16px;
+  height: 10px;
+  background-color: var(--bg-gray);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 2px;
 }
