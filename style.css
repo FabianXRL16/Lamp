@@ -228,3 +228,35 @@ body {
   bottom: 18px;
   right: 80px;
 }
+
+.base {
+  background-color: var(--bg-gray);
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  border-radius: 20px 20px 0 0;
+  right: 35px;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.baseShadow {
+  width: 104px;
+  height: 40px;
+  background-color: var(--bg-gray);
+  border-left: var(--bg-gray-light) 25px solid;
+  border-right: var(--bg-gray-dark) 25px solid;
+  border-radius: 20px 20px 0 0;
+}
+
+.baseShadow::after {
+  content: "";
+  position: absolute;
+  width: 134px;
+  height: 30px;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--bg-gray);
+  right: 10px;
+}
