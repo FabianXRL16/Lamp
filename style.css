@@ -324,8 +324,8 @@ button {
   border-radius: 50%;
   background: rgba(253, 194, 38, 0.8);
   position: absolute;
-  top: 130px;
-  right: calc((100vw - 400px) / 2 + 100px);
+  top: -75px;
+  left: -75px;
   filter: blur(30px);
   box-shadow: 0 0 50px rgba(253, 194, 38, 0.1),
     0 0 100px rgba(253, 196, 38, 0.582), 0 0 150px #fdc226, 0 0 200px #fdc226,
