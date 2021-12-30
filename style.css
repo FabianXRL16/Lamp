@@ -1,4 +1,5 @@
-:root {
+:root,
+:root.light {
   --bg-gray: #383838;
   --bg-gray-dark: #262626;
   --bg-gray-light: #727272;
@@ -9,6 +10,21 @@
   --cover: #e95354;
   --cover-shadow-light: #ee8586;
   --cover-shadow-dark: #a43a3c;
+  --body: rgb(27, 109, 109);
+}
+
+:root.dark {
+  --bg-gray: #222222;
+  --bg-gray-dark: #161616;
+  --bg-gray-light: #363636;
+  --bg-metal: #2c2c2c;
+  --white: rgb(43, 43, 43);
+  --focus: #6b6b6b;
+  --light: transparent;
+  --cover: #291010;
+  --cover-shadow-light: #352424;
+  --cover-shadow-dark: #2b1d1d;
+  --body: rgb(33, 58, 58);
 }
 
 body {
@@ -18,12 +34,12 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  background-color: var(--body);
 }
 
 .lamp {
   height: 400px;
   width: 400px;
-  border: 1px solid red;
   position: relative;
 }
 
@@ -101,7 +117,7 @@ body {
   width: 200px;
   height: 150px;
   border-radius: 80%;
-  background-color: #e95354;
+  background-color: var(--cover);
   margin: 10px -20px 0 0;
   transform: rotate(5deg);
 }
