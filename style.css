@@ -1,6 +1,7 @@
 :root {
   --bg-gray: #383838;
   --bg-gray-light: #727272;
+  --bg-metal: #8d8d8d;
 }
 
 body {
@@ -164,4 +165,17 @@ body {
 .braShadow .containerBra .bra1,
 .braShadow .containerBra .bra2 {
   background-color: #262626;
+}
+
+.bodyFirst {
+  background-color: transparent;
+  width: 15px;
+  height: 170px;
+  border: 10px solid var(--bg-metal);
+  border-bottom: none;
+  border-top: none;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 38px;
+  right: 111px;
 }
