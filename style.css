@@ -179,3 +179,16 @@ body {
   top: 38px;
   right: 111px;
 }
+
+.bodySecond {
+    background-color: transparent;
+    width: 15px;
+    height: 200px;
+    border: 10px solid var(--bg-metal);
+    border-bottom: none;
+    border-top: none;
+    transform: rotate(20deg);
+    position: absolute;
+    bottom: 18px;
+    right: 80px;
+  }
