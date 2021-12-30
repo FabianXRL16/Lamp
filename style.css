@@ -35,12 +35,15 @@ body {
   display: grid;
   place-content: center;
   background-color: var(--body);
+  position: relative;
+  overflow: hidden;
 }
 
 .lamp {
   height: 400px;
   width: 400px;
   position: relative;
+  margin: 40px 0 0 80px;
 }
 
 .main {
@@ -313,4 +316,18 @@ button {
   position: absolute;
   top: 0;
   left: 2px;
+}
+
+.shade {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(253, 194, 38, 0.8);
+  position: absolute;
+  top: 130px;
+  right: calc((100vw - 400px) / 2 + 80px);
+  filter: blur(30px);
+  box-shadow: 0 0 50px rgba(253, 194, 38, 0.1),
+    0 0 100px rgba(253, 196, 38, 0.582), 0 0 150px #fdc226, 0 0 200px #fdc226,
+    0 0 250px #fdc226, 0 0 300px #fdc226;
 }
