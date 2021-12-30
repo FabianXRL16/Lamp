@@ -1,7 +1,9 @@
 :root {
   --bg-gray: #383838;
+  --bg-gray-dark: #262626;
   --bg-gray-light: #727272;
   --bg-metal: #8d8d8d;
+  --white: #fff;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  background-color: wheat;
 }
 
 .lamp {
@@ -164,7 +167,7 @@ body {
 
 .braShadow .containerBra .bra1,
 .braShadow .containerBra .bra2 {
-  background-color: #262626;
+  background-color: var(--bg-gray-dark);
 }
 
 .bodyFirst {
@@ -180,15 +183,48 @@ body {
   right: 111px;
 }
 
+.hinge {
+  background-color: var(--bg-gray-dark);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 170px;
+  right: 32.5px;
+  box-shadow: var(--bg-metal) -5px 0 0 0;
+  overflow: hidden;
+}
+.hinge::after {
+  content: "";
+  background-color: var(--white);
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.hingeShadow {
+  background-color: var(--bg-gray);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+}
+
 .bodySecond {
-    background-color: transparent;
-    width: 15px;
-    height: 200px;
-    border: 10px solid var(--bg-metal);
-    border-bottom: none;
-    border-top: none;
-    transform: rotate(20deg);
-    position: absolute;
-    bottom: 18px;
-    right: 80px;
-  }
+  background-color: transparent;
+  width: 15px;
+  height: 200px;
+  border: 10px solid var(--bg-metal);
+  border-bottom: none;
+  border-top: none;
+  transform: rotate(20deg);
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+}
